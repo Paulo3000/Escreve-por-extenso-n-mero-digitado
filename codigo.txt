@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.IO;
-
+//123
 namespace teste1
 {
     class Program
 
-        // FAZER TRATAMENTO DAS CENTANAS 11-19 E AS POSIÇÕES  QUE CONTEM 0 NO CENTRO DA CENTENA EX 101
+        // FAZER TRATAMENTO DAS CENTANAS 11-19 E AS POSIï¿½ï¿½ES  QUE CONTEM 0 NO CENTRO DA CENTENA EX 101
     {
         static void Main(string[] args)
         {
-            int incremento = 27;//este numero é  distancia de um número  ex 3 + 27 vai dar a posição 30 na qual difere a unidade 3 de 300
+            int incremento = 27;//este numero ï¿½  distancia de um nï¿½mero  ex 3 + 27 vai dar a posiï¿½ï¿½o 30 na qual difere a unidade 3 de 300
             int incremento2 = 18;
-            //Esta lista está buscango do da unidade C: os numeros escrito por estenço exemplo 0,1,2,3 = zero,um,doi,três, etc.
+            //Esta lista estï¿½ buscango do da unidade C: os numeros escrito por estenï¿½o exemplo 0,1,2,3 = zero,um,doi,trï¿½s, etc.
             Class1 num_unidade = new Class1();
             List<string> ListaUnidade = new List<string>();
             using (StreamReader ler = new StreamReader(@"C:\Users\Julia3000\Documents\c#Testes\teste1\unidade.txt"))
@@ -34,7 +34,7 @@ namespace teste1
 
 
         
-            Console.WriteLine("entre com um número até 999:\npara confirmar digite :* ");
+            Console.WriteLine("entre com um nï¿½mero atï¿½ 999:\npara confirmar digite :* ");
 
             char unidade =' ', dezena = ' ', centana = ' ';
             int cont = 0;
@@ -50,7 +50,7 @@ namespace teste1
                 num[i] = Console.ReadKey().KeyChar;
                 if (num[i] == '*')
                 {
-                    //controle do cont pra que não conte o * como um numero(gambiarra :D)
+                    //controle do cont pra que nï¿½o conte o * como um numero(gambiarra :D)
                  soma = cont - 1;
                  cont = soma;
                     break;
@@ -58,7 +58,7 @@ namespace teste1
 
             }
        
-            // nesta etapa é feito um teste pra verificar se o caracter sendo armazenado no vetor
+            // nesta etapa ï¿½ feito um teste pra verificar se o caracter sendo armazenado no vetor
            /* for (int i = 0; i < num.Length; i++)
             {
                 Console.WriteLine(" o numero guardado foi" + num[i]);
@@ -78,7 +78,7 @@ namespace teste1
             int uni;
 
 
-            //nesta chave sera feita a saída do programa
+            //nesta chave sera feita a saï¿½da do programa
 
             switch(cont)
             {
@@ -117,14 +117,14 @@ namespace teste1
 
 
 
-                    //lógica para formar os valores das centanas
+                    //lï¿½gica para formar os valores das centanas
                 case 3:
                     Console.WriteLine("\n");
                     Console.WriteLine(num[0]);
                     string transforma_centena = Convert.ToString(num[0]);
                    int aux = Convert.ToInt16(transforma_centena);
-                    //quando o primeiro numro da centena for 0 sera anulado a posição pra que não aparece
-                    // então as strings de concatenação farão seu trabalho.
+                    //quando o primeiro numro da centena for 0 sera anulado a posiï¿½ï¿½o pra que nï¿½o aparece
+                    // entï¿½o as strings de concatenaï¿½ï¿½o farï¿½o seu trabalho.
                     if(num[0]=='0')
                     {
                         ListaUnidade[aux+incremento]=(null);
